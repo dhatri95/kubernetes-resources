@@ -5,7 +5,7 @@ metadata:
   labels:
     name: expense
     env: dev
-specs:
+spec:
   containers:
-    name: nginx
+  - name: nginx
     image: nginx
