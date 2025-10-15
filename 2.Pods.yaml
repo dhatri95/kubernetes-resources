@@ -1,7 +1,7 @@
-kind: Pods
+kind: Pod
 apiVersion: v1
 metadata:
-  name : expense
+  name : Pod
   labels:
     name: expense
     env: dev
