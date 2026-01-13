@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: annotation
+  annotations:
+    git-url.io/imp: "https://github.com/dhatri95/kubernetes-resources"
+spec:
+  containers:
+  - name: nginx
+    image: nginx
