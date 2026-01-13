@@ -1,0 +1,11 @@
+kind: pod
+apiversion: v1
+metadata:
+  name: label
+  labels:
+    course: kubernetes
+    project : expense
+spec:
+  containers:
+  - name: nginx
+    image: nginx
