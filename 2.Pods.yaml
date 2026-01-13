@@ -5,7 +5,6 @@ metadata:
   labels:
     name: expense
     env: dev
-    git-url.io/imp: "https://github.com/dhatri95/kubernetes-resources"
 spec:
   containers:
   - name: nginx
