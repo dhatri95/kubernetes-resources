@@ -12,9 +12,9 @@ spec:
     resources:
     #soft limit
       requests:
-        cpu: "64mi"
-        memory: "250m"
+        cpu: "64m"
+        memory: "250mi"
     #hard limit
       limits:
-        cpu: "256mi"
-        memory: "750m"
+        cpu: "256m"
+        memory: "750mi"
