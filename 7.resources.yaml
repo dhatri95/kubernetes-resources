@@ -1,0 +1,20 @@
+kind: Pod
+apiversion: v1
+metadata:
+  name: resources
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: course
+      value: kubernetes
+    resources:
+    #soft limit
+      requests:
+        cpu: "64mi"
+        memory: "250m"
+    #hard limit
+      limits:
+        cpu: "256mi"
+        memory: "750m"
