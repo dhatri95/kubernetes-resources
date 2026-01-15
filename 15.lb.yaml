@@ -1,9 +1,9 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: expense-np
+  name: expense-lb
   labels:
-    example: node-port
+    example: loadbalancer
 spec:
   selector:
     environment: dev
