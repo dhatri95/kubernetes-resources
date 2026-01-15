@@ -10,7 +10,7 @@ spec:
     project: expense
     component: frontend
     example: testing-services
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 32456 #cluserIP port
     targetPort: 80 # pod port
