@@ -5,7 +5,7 @@ metadata:
   labels:
     example: clusterIP
 spec:
-  selectors:
+  selector:
     environment: dev
     project: expense
     component: frontend
