@@ -15,4 +15,6 @@ spec:
   - port: 32456 #cluserIP port
     targetPort: 80 # pod port
     nodePort: 32567 # nodeport port
+    containerPort: 80
+
   
