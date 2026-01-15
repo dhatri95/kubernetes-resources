@@ -11,5 +11,5 @@ spec:
     component: frontend
     example: testing-services  
   ports:
-    port: 80 #clusterIP port
+  - port: 80 #clusterIP port
     targetPort: 80 #pod port
