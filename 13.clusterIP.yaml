@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: expense-cip
+  labels:
+    example: clusterIP
+spec:
+  selectors:
+    environment: dev
+    project: expense
+    component: frontend
+    example: testing-services  
+  ports:
+    port: 80 #clusterIP port
+    targetPort: 80 #pod port
