@@ -1,0 +1,17 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: expense-np
+  labels:
+    example: node-port
+spec:
+  selector:
+    environment: dev
+    project: expense
+    component: frontend
+    example: testing-services
+  type: NodePort
+  ports:
+  - port: 32456
+    targetPort: 80
+  
