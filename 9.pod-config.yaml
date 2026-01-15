@@ -13,7 +13,7 @@ spec:
           name: expense
           key: course
     - name: author
-      valuefrom:
+      valueFrom:
         configMapKeyRef:
           name: expense
           key: author
