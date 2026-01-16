@@ -12,7 +12,7 @@ spec:
     example: testing-services
   type: LoadBalancer
   ports:
-  - port: 32456 #cluserIP port
+  - port: 32456 #lb port
     targetPort: 80 # pod port
     nodePort: 32567 # nodeport port
 

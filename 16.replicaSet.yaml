@@ -1,0 +1,28 @@
+kind: ReplicaSet
+apiVersion: apps/v1
+metadata:
+  name: nginx
+  labels:
+   example: replicaSet
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: frontend
+      app: nginx
+  template:
+    metadata:
+      name: nginx
+      labels:
+        tier: frontend
+        app: nginx
+        author: Dhatri
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+      ports:
+      - containerPort: 80
+
+  
+
