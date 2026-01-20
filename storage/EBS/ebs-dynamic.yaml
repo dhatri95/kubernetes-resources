@@ -16,6 +16,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-dynamic
+  labels:
+    purpose: pv-testing
 spec:
   containers:
   - name: nginx
@@ -29,3 +31,24 @@ spec:
   - name: persistent-storage
     persistentVolumeClaim:
       claimName: ebs-dynamic-claim
+
+
+---
+
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx
+  #namespace: expense
+  labels:
+    component: nginx-service
+spec:
+  type: LoadBalancer
+  selector:
+    purpose: pv-testing
+  ports:
+  - port: 80
+    nodePort: 31134
+    targetPort: 80
+      
